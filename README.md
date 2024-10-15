@@ -8,7 +8,7 @@ manage them.
 ```sh
 git clone --recurse-submodules git@github.com:Michael-JB/dotfiles.git
 cd dotfiles
-stow -t ~ nvim tmux zsh
+stow -t ~ nvim tmux zsh git
 ```
 
 ### tmux

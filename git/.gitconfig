@@ -1,0 +1,7 @@
+[user]
+  email = michael@ramyun.co.uk
+  name = Michael Barlow
+[core]
+  editor = nvim
+[push]
+  autoSetupRemote = true
