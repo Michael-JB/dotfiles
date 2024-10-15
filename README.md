@@ -7,6 +7,7 @@ manage them.
 
 ```sh
 git clone --recurse-submodules git@github.com:Michael-JB/dotfiles.git
+git config submodule.recurse true # Recommended config for this repository
 cd dotfiles
 stow -t ~ nvim tmux zsh git
 ```
