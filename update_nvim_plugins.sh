@@ -8,5 +8,6 @@ git commit -am "Update plugins"
 
 popd
 
-git commit -am "Update nvim"
+git add nvim
+git commit -m "Update nvim"
 git push
