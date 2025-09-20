@@ -1,9 +1,8 @@
 # Exposes ANSI colours as env vars
 autoload -U colors && colors
 
-# Register the prompt update function to run before each prompt display
-autoload -Uz add-zsh-hook
-add-zsh-hook precmd update_prompt
+# This allows us to use dynamic prompt content
+setopt prompt_subst
 
 function is_git_repo() {
   git rev-parse --is-inside-work-tree &>/dev/null
@@ -22,7 +21,6 @@ function git_prompt() {
   if is_git_repo; then
     local branch=$(git_branch)
     local prefix="%{$fg_bold[blue]%}git:(%{$fg[red]%}${branch}%{$fg[blue]%}) "
-    
     echo "$prefix$(is_git_dirty && echo "%{$fg[yellow]%}✗ ")"
   fi
 }
@@ -33,6 +31,4 @@ function build_prompt() {
   echo "$exit_status $cwd $(git_prompt)%{$reset_color%}"
 }
 
-function update_prompt() {
-  PROMPT="$(build_prompt)"
-}
+PROMPT='$(build_prompt)'
