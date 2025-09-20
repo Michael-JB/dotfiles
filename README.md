@@ -17,7 +17,7 @@ stow -t ~ nvim tmux zsh git ghostty
 ```
 ### zsh
 
-- Add the top of `~/.zshrc`:
+- Add the following to the top of `~/.zshrc`:
     ```sh
     source $HOME/.config/zsh/base-config.zsh
     ```
