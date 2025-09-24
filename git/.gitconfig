@@ -5,3 +5,8 @@
   editor = nvim
 [push]
   autoSetupRemote = true
+[alias]
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  s = status
+  d = diff
+  ds = diff --staged
