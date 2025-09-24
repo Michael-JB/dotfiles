@@ -1,0 +1,3 @@
+# A convenience directory for all projects to store working files that should
+# not be tracked
+.no-vcs/

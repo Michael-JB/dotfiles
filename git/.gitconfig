@@ -8,5 +8,6 @@
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
   s = status
-  d = diff
   ds = diff --staged
+[core]
+  excludesFile = ~/.gitignore

@@ -1,0 +1,2 @@
+# We need this file to prevent stow from automatically ignoring the
+# `.gitignore` file.
