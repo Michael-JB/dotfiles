@@ -1,7 +1,7 @@
 theme = Kanagawa Wave
 
-# Requires CommitMono nerd font
-font-family = CommitMono Nerd Font Mono
+# Requires CommitMono font (https://commitmono.com/)
+font-family = CommitMono
 
 # Configure cursor
 shell-integration-features = no-cursor
