@@ -4,11 +4,15 @@ set -euo pipefail
 
 pushd nvim/.config/nvim
 
-git commit -am "Update plugins"
-git push
+if ! git diff --quiet || ! git diff --staged --quiet; then
+  git commit -am "Update plugins"
+  git push
+fi
 
 popd
 
 git add nvim
-git commit -m "Update nvim"
-git push
+if ! git diff --staged --quiet; then
+  git commit -m "Update nvim"
+  git push
+fi
