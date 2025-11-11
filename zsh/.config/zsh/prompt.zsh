@@ -31,7 +31,7 @@ function git_prompt() {
 
 function ssh_prompt() {
   if is_ssh_session; then
-    echo "%{$fg_bold[blue]%}ssh:(%{$fg[cyan]%}%m%{$fg[blue]%}) "
+    echo "%{$fg_bold[blue]%}ssh:(%{$fg[magenta]%}%m%{$fg[blue]%}) "
   fi
 }
 
