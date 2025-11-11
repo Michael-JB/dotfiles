@@ -15,5 +15,5 @@ zstyle ':completion:*' menu select
 bindkey "$terminfo[kcbt]" reverse-menu-complete
 setopt menucomplete
 
-# Enable colours for programs like `ls` (`ls` respects this env var on macOS)
+# Enable colours for programs like `tree` and `ls` (`ls` respects this env var on macOS)
 export CLICOLOR=1
