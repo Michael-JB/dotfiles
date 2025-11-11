@@ -4,6 +4,10 @@ autoload -U colors && colors
 # This allows us to use dynamic prompt content
 setopt prompt_subst
 
+function is_ssh_session() {
+  [[ -n $SSH_CONNECTION ]]
+}
+
 function is_git_repo() {
   git rev-parse --is-inside-work-tree &>/dev/null
 }
@@ -25,10 +29,16 @@ function git_prompt() {
   fi
 }
 
+function ssh_prompt() {
+  if is_ssh_session; then
+    echo "%{$fg_bold[blue]%}ssh:(%{$fg[cyan]%}%m%{$fg[blue]%}) "
+  fi
+}
+
 function build_prompt() {
-  local exit_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})➜"
-  local cwd="%{$fg[cyan]%}%c%{$reset_color%}"
-  echo "$exit_status $cwd $(git_prompt)%{$reset_color%}"
+  local exit_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})➜ "
+  local cwd="%{$fg[cyan]%}%c "
+  echo "$exit_status$(ssh_prompt)$cwd$(git_prompt)%{$reset_color%}"
 }
 
 PROMPT='$(build_prompt)'
