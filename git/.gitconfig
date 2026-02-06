@@ -8,6 +8,11 @@
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
   s = status
+  f = fetch
+  rbm = rebase origin/main
+  ca = commit --amend
   ds = diff --staged
+  pf = push --force-with-lease
+  rbc = rebase --continue
 [core]
   excludesFile = ~/.gitignore
