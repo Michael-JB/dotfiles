@@ -13,7 +13,7 @@ manage them.
 git clone --recurse-submodules git@github.com:Michael-JB/dotfiles.git
 cd dotfiles
 git config submodule.recurse true # Recommended config for this repository
-stow -t ~ nvim tmux zsh git ghostty
+stow -t ~ nvim tmux zsh git ghostty k9s
 ```
 ### zsh
 
@@ -40,3 +40,7 @@ stow -t ~ nvim tmux zsh git ghostty
 
 - Install with `brew install neovim`
 - See https://github.com/Michael-JB/papaya-nvim for further install instructions
+
+### k9s
+
+- Install with `brew install k9s`

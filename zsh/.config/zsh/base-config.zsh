@@ -17,3 +17,6 @@ setopt menucomplete
 
 # Enable colours for programs like `tree` and `ls` (`ls` respects this env var on macOS)
 export CLICOLOR=1
+
+# Point tools (e.g. k9s) away from ~/Library/Application Support on macOS
+export XDG_CONFIG_HOME="$HOME/.config"

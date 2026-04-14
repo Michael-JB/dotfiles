@@ -1,0 +1,100 @@
+# I manually compiled this from the kanagawa.nvim colour scheme:
+# https://github.com/rebelot/kanagawa.nvim/blob/aef7f5cec0a40dbe7f3304214850c472e2264b10/lua/kanagawa/themes.lua
+
+fujiWhite:     &fujiWhite     "#DCD7BA"
+oldWhite:      &oldWhite      "#C8C093"
+fujiGray:      &fujiGray      "#727169"
+sumiInk6:      &sumiInk6      "#54546D"
+oniViolet:     &oniViolet     "#957FB8"
+springViolet1: &springViolet1 "#938AA9"
+springViolet2: &springViolet2 "#9CABCA"
+crystalBlue:   &crystalBlue   "#7E9CD8"
+springBlue:    &springBlue    "#7FB4CA"
+waveAqua2:     &waveAqua2     "#7AA89F"
+springGreen:   &springGreen   "#98BB6C"
+autumnGreen:   &autumnGreen   "#76946A"
+autumnYellow:  &autumnYellow  "#DCA561"
+carpYellow:    &carpYellow    "#E6C384"
+samuraiRed:    &samuraiRed    "#E82424"
+
+k9s:
+  body:
+    fgColor: *fujiWhite
+    bgColor: default
+    logoColor: *oniViolet
+  prompt:
+    fgColor: *fujiWhite
+    bgColor: default
+    suggestColor: *springViolet1
+  info:
+    fgColor: *crystalBlue
+    sectionColor: *oldWhite
+  dialog:
+    fgColor: *fujiWhite
+    bgColor: default
+    buttonFgColor: *fujiWhite
+    buttonBgColor: *oniViolet
+    buttonFocusFgColor: *carpYellow
+    buttonFocusBgColor: *springBlue
+    labelFgColor: *oldWhite
+    fieldFgColor: *fujiWhite
+  frame:
+    border:
+      fgColor: *sumiInk6
+      focusColor: *crystalBlue
+    menu:
+      fgColor: *fujiWhite
+      keyColor: *springBlue
+      numKeyColor: *springBlue
+    crumbs:
+      fgColor: *fujiWhite
+      bgColor: default
+      activeColor: *crystalBlue
+    status:
+      newColor: *fujiWhite
+      modifyColor: *autumnYellow
+      addColor: *autumnGreen
+      errorColor: *samuraiRed
+      highlightColor: *carpYellow
+      killColor: *fujiGray
+      completedColor: *fujiGray
+    title:
+      fgColor: *fujiWhite
+      bgColor: default
+      highlightColor: *waveAqua2
+      counterColor: *oniViolet
+      filterColor: *springBlue
+  views:
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *oniViolet
+        - *samuraiRed
+      defaultChartColors:
+        - *oniViolet
+        - *samuraiRed
+    table:
+      fgColor: *fujiWhite
+      bgColor: default
+      header:
+        fgColor: *oldWhite
+        bgColor: default
+        sorterColor: *waveAqua2
+    xray:
+      fgColor: *fujiWhite
+      bgColor: default
+      cursorColor: default
+      graphicColor: *oniViolet
+      showIcons: false
+    yaml:
+      keyColor: *crystalBlue
+      colonColor: *springViolet2
+      valueColor: *fujiWhite
+    logs:
+      fgColor: *fujiWhite
+      bgColor: default
+      indicator:
+        fgColor: *fujiWhite
+        bgColor: *oniViolet
+        toggleOnColor: *springGreen
+        toggleOffColor: *springBlue
