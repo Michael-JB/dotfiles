@@ -5,6 +5,8 @@
   editor = nvim
 [push]
   autoSetupRemote = true
+[pull]
+  rebase = true
 [alias]
   tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
   s = status
