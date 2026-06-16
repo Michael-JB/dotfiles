@@ -1,0 +1,10 @@
+# lazygit config
+# Full reference: https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+# Default keybindings: https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md
+
+keybinding:
+  commits:
+    # I use ctrl-j and ctrl-k to navigate tmux panes and vim splits,
+    # so rebind commit movement to alt-j and alt-k.
+    moveUpCommit: '<a-k>'
+    moveDownCommit: '<a-j>'
