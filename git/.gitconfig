@@ -3,6 +3,12 @@
   name = Michael Barlow
 [core]
   editor = nvim
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  dark = true
+  navigate = true
 [push]
   autoSetupRemote = true
 [pull]

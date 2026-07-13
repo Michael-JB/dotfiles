@@ -15,6 +15,11 @@ cd dotfiles
 git config submodule.recurse true # Recommended config for this repository
 stow -t ~ nvim tmux zsh git ghostty k9s lazygit
 ```
+
+### git
+
+- Install [delta](https://github.com/dandavison/delta) with `brew install git-delta`
+
 ### zsh
 
 - Add the following to the top of `~/.zshrc`:
@@ -47,4 +52,5 @@ stow -t ~ nvim tmux zsh git ghostty k9s lazygit
 
 ### lazygit
 
+- Follow [git instructions above](#git)
 - Install with `brew install lazygit`
