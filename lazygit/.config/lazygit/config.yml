@@ -5,6 +5,6 @@
 keybinding:
   commits:
     # I use ctrl-j and ctrl-k to navigate tmux panes and vim splits,
-    # so rebind commit movement to alt-j and alt-k.
-    moveUpCommit: '<a-k>'
-    moveDownCommit: '<a-j>'
+    # so rebind commit movement to shift-j and shift-k.
+    moveUpCommit: 'K'
+    moveDownCommit: 'J'
