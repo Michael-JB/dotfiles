@@ -1,0 +1,16 @@
+contexts_dir = "~/dev/contexts"
+branch_prefix = "mb/"
+
+[layout]
+split = "row"
+
+[[layout.panes]]
+split = "column"
+[[layout.panes.panes]]
+command = "lazygit"
+[[layout.panes.panes]]
+command = "nvim"
+
+[[layout.panes]]
+command = "claude"
+focus = true
