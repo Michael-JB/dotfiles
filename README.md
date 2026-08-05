@@ -13,7 +13,7 @@ manage them.
 git clone --recurse-submodules git@github.com:Michael-JB/dotfiles.git
 cd dotfiles
 git config submodule.recurse true # Recommended config for this repository
-stow -t ~ nvim tmux zsh git ghostty k9s lazygit
+stow -t ~ nvim tmux zsh git ghostty k9s lazygit ctx
 ```
 
 ### git
@@ -54,3 +54,7 @@ stow -t ~ nvim tmux zsh git ghostty k9s lazygit
 
 - Follow [git instructions above](#git)
 - Install with `brew install lazygit`
+
+### ctx
+
+- Install with `uv tool install ctx-tui`
