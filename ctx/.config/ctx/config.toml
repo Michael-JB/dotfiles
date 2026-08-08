@@ -1,6 +1,18 @@
 contexts_dir = "~/dev/contexts"
 branch_prefix = "mb/"
 
+[[status]]
+name = "claude"
+builtin = "agent"
+
+[[status]]
+name = "pr"
+builtin = "github-pr"
+
+[[status]]
+name = "ci"
+builtin = "github-checks"
+
 [layout]
 split = "row"
 
