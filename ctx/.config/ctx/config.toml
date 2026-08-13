@@ -7,11 +7,14 @@ builtin = "agent"
 
 [[status]]
 name = "pr"
-builtin = "github-pr"
+builtin = "github"
 
-[[status]]
-name = "ci"
-builtin = "github-checks"
+# Kanagawa Wave, to match the terminal theme.
+[theme]
+foreground = "#dcd7ba"
+selection = "#2d4f67"
+border_active = "#ffa066"
+border_inactive = "#54546d"
 
 [layout]
 split = "row"
