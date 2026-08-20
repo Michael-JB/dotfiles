@@ -27,5 +27,5 @@ command = "lazygit"
 command = "nvim"
 
 [[layout.panes]]
-command = "claude"
+builtin = "claude"
 focus = true
