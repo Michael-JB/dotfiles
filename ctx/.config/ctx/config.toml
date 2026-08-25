@@ -20,11 +20,7 @@ border_inactive = "#54546d"
 split = "row"
 
 [[layout.panes]]
-split = "column"
-[[layout.panes.panes]]
 command = "lazygit"
-[[layout.panes.panes]]
-command = "nvim"
 
 [[layout.panes]]
 builtin = "claude"
