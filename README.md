@@ -57,4 +57,4 @@ stow -t ~ nvim tmux zsh git ghostty k9s lazygit ctx
 
 ### ctx
 
-- Install with `uv tool install ctx-tui`
+- Install with `cargo install ctx-tui`
