@@ -3,10 +3,9 @@
 # Default keybindings: https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md
 
 git:
-  pagers:
+  diffRenderers:
     - colorArg: always
-      pager: delta --dark --paging=never
-
+      command: delta --dark --paging=never
 keybinding:
   commits:
     # I use ctrl-j and ctrl-k to navigate tmux panes and vim splits,
