@@ -7,3 +7,6 @@ font-family = CommitMono
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
+
+# left only, so right option still types special characters
+macos-option-as-alt = left
